@@ -2,13 +2,21 @@
   "name": "burger-queen",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.12.1",
+    "node": "12.13.1"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "bufferutil": "^4.0.1",
+    "express": "^4.17.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0"
+    "react-scripts": "3.3.0",
+    "utf-8-validate": "^5.0.2",
+    "ws": "^7.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
