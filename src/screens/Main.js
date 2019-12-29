@@ -4,8 +4,8 @@ const Main = () => {
     return (
         <div>
             <h1>Burger Queen</h1>
-            <button>ENTRAR</button>
-            <button>REGISTRAR</button>
+            <div><button>ENTRAR</button></div>
+            <div><button>REGISTRAR</button></div>
         </div>
     )
 }

@@ -4,10 +4,10 @@ const Salon = () => {
     return (
         <div>
             <h1>Salão</h1> 
-            <button>CAFÉ DA MANHÃ</button> 
-            <button>RESTO DO DIA</button>
-            <button>PEDIDOS PRONTOS</button>
-            <button>SAIR</button>
+            <div><button>CAFÉ DA MANHÃ</button></div>
+            <div><button>RESTO DO DIA</button></div>
+            <div><button>PEDIDOS PRONTOS</button></div>
+            <div><button>SAIR</button></div>
         </div>
     )
 }

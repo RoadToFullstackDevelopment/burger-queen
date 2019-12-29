@@ -6,14 +6,16 @@ const Register = () => {
         <div>
             <h1>Burger Queen</h1>
             <form>
-                <label>Email</label>
-                <input type="text"/>
-                <label>Senha</label>
-                <input type="text"/>
-                <label>Confirmar senha</label>                
-                <input type="text"/>
-                <input type="checkbox"/><label>Cozinha</label>
-                <input type="checkbox"/><label>Salão</label>
+                <div><label>Email</label></div>
+                <div><input type="text"/></div>
+                <div><label>Senha</label></div>
+                <div><input type="text"/></div>
+                <div><label>Confirmar senha</label></div>              
+                <div><input type="text"/></div>
+                <div>
+                    <input type="checkbox"/><label>Cozinha</label>
+                    <input type="checkbox"/><label>Salão</label>
+                </div>
                 <button>REGISTRAR</button>
             </form>
             <p>Se você já tem cadastro, <Link to="/login">clique aqui</Link></p>

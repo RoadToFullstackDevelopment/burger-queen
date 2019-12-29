@@ -4,8 +4,8 @@ const Kitchen = () => {
     return (
         <div>
             <h1>Cozinha</h1>  
-            <button>VER PEDIDOS</button>
-            <button>SAIR</button>  
+            <div><button>VER PEDIDOS</button></div>
+            <div><button>SAIR</button></div>  
         </div>
     )
 }

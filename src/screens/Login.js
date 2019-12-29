@@ -6,12 +6,14 @@ const Login = () => {
         <div>
             <h1>Burger Queen</h1>
             <form>
-                <label>Email</label>
-                <input type="text"/>
-                <label>Senha</label>
-                <input type="text"/>
-                <input type="checkbox"/><label>Cozinha</label>
-                <input type="checkbox"/><label>Salão</label>
+                <div><label>Email</label></div>
+                <div><input type="text"/></div>
+                <div><label>Senha</label></div>
+                <div><input type="text"/></div>
+                <div>
+                    <input type="checkbox"/><label>Cozinha</label>
+                    <input type="checkbox"/><label>Salão</label>
+                </div>
                 <button>ENTRAR</button>
             </form>
             <p>Se você ainda não tem cadastro, <Link to="/register">clique aqui</Link></p>
