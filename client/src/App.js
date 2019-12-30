@@ -1,11 +1,12 @@
 import React from 'react';
 
-const App = () => {
+
+function App() {
   return (
-    <div>
+    <div className="App">
       <h1>Teste</h1>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
