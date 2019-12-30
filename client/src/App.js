@@ -1,11 +1,20 @@
 import React from 'react';
+import Main from './components/Main';
+import Register from './components/Register';
+import Login from './components/Login';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Teste</h1>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Switch>
+          <Route path="/" component={Main} exact />
+          <Route path="/register" component={Register} />
+          <Route path="/login" component={Login} />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 
