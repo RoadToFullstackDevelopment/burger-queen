@@ -13,8 +13,8 @@ const App = () => {
       <div className="App">
         <Switch>
           <Route path="/" component={Main} exact />
-          <Route path="/register" component={Register} />
-          <Route path="/login" component={Login} />
+          <SecretRoute exact path="/register" component={Register} />
+          <SecretRoute exact path="/login" component={Login} />
           <SecretRoute exact path="/kitchen" component={Kitchen} />
           <SecretRoute exact path="/salon" component={Salon} />
         </Switch>
