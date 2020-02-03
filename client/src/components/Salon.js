@@ -7,8 +7,7 @@ const Salon = (props) => {
     return (
         <div>
            <div><h1>Salão</h1></div> 
-           <div><button onClick={() => history.push("/breakfast")}>CAFÉ DA MANHÃ</button></div>
-           <div><button onClick={() => history.push("/restoftheday")}>RESTO DO DIA</button></div>
+           <div><button onClick={() => history.push("/menu")}>MENU</button></div>
            <div><button>PEDIDOS PRONTOS</button></div>
            <div><button onClick={() => {Auth.logout(() => {props.history.push("/")})}}>SAIR</button></div>
         </div>

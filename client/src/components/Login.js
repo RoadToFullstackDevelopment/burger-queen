@@ -23,7 +23,7 @@ const Login = (props) => {
           salao: true
         }
     
-        axios.get('https://burger-queen-restapi.herokuapp.com/api/users', user).then(res => console.log(res.data))
+        axios.post('https://burger-queen-restapi.herokuapp.com/api/users/login', user).then(res => console.log(res.data))
         
         if(checked.kitchen) {
           return Auth.login(() => {props.history.push("/kitchen")})
