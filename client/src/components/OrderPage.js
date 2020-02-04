@@ -4,8 +4,6 @@ import Menu from './Menu';
 import styled from 'styled-components';
 
 const OrderPage = (props) => {
-    const [waiterName, setWaiterName] = React.useState([]);
-    const [clientName, setClientName] = React.useState([]);
     return (
         <form>
             <h1>Pedidos</h1>
@@ -23,10 +21,10 @@ const OrderPage = (props) => {
             </div>
             <OrderColumn>
                 <div className="cart-item cart-column">
-                    <img class={props.item.productImage} src="" />
-                    <span class="cart-item-title">{props.item.name}</span>
+                    <img class="image" src="" />
+                    <span class="cart-item-title">produto</span>
                 </div>
-                <div class="cart-price cart-column">{props.item.price}</div>
+                <div class="cart-price cart-column">preço</div>
                 <div class="cart-quantity cart-column">
                     <select name="" id="">
                         <option value="">1</option>

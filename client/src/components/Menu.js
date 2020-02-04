@@ -49,27 +49,7 @@ const Menu = () => {
         setState({ ...state, showModal: true });
     };
 
-    const [productId, setProductId] = React.useState([]);
-    const [productName, setProductName] = React.useState([]);
-    const [productImageLink, setProductImageLink] = React.useState([]);
-    const [productQuantity, setProductQuantity] = React.useState([]);
-    const [productPrice, setProductPrice] = React.useState([]);
 
-    const item = {
-        productId: productId,
-        productName: productName,
-        productImageLink: productImageLink,
-        productQuantity: productQuantity,
-        productPrice: productPrice
-    }
-
-    axios.get('https://burger-queen-restapi.herokuapp.com/api/products', item).then(res => console.log(res.data))
-
-    const handleProductSubmit = (e) => {
-        e.preventDefault()
-        console.log(productId, productName, productImageLink, productQuantity, productPrice)
-    }
-    
     return(
         <main>
             <div><h1>Salão</h1></div> 
@@ -101,10 +81,10 @@ const Menu = () => {
                             <div>
                                 <Modal show={state.showModal} onClose={closeModal}>
                                 <ModalContent>
-                                    <OrderPage orderItems={state.orderItems} />
+                                    <OrderPage />
                                 </ModalContent>
                                 </Modal>
-                                <button type="submit" rel="button" onClick={openModal} onSubmit={handleProductSubmit}>
+                                <button type="submit" rel="button" onClick={openModal}>
                                 open
                                 </button>
                             </div> 
